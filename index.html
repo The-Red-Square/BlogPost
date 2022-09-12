@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="post-box">
+        <nav>
+            <h3>BlogSpace</h3>
+        </nav>
+        <div id="posts"></div>
+    </div>
+    <div  id="input-box">
+        <form action="https://apis.scrimba.com/jsonplaceholder/posts" method="put" id="article">
+            <label for="title" class="labels">Title:</label>
+            <div class="shdw">
+                <input id="title" class="txtbox">
+            </div>
+            <label for="body" class="labels">Body:</label>
+            <div class="shdw2">
+                <textarea id="body" class="txtbox"></textarea>
+            </div>
+            <button id="btn">Post</button>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
+

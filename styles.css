@@ -1,0 +1,111 @@
+body {
+    background-image: linear-gradient(150deg, rgb(22, 126, 19), rgb(167, 196, 6));
+    background-size: 100vw 100vh;
+    font-family:sans-serif;
+}
+
+#post-box {
+    position: absolute;
+    width: 36vw;
+    height: 36vw;
+    background-image: linear-gradient(150deg, rgb(167, 196, 6), rgb(22, 126, 19));
+    margin-top: 8vh;
+    margin-left: 7vw;
+    overflow: scroll;
+    scrollbar-width: none;
+    box-shadow: 0.8vw 0.8vw 15px rgba(255,255,255,0.2),
+                -0.8vw -0.8vw 15px rgba(0,0,0,0.1),
+                inset 0.27vw 0.27vw 5px rgba(255,255,255,0.2),
+                inset -0.27vw -0.27vw 5px rgba(0,0,0,0.1);
+}
+
+#post-box::-webkit-scrollbar { 
+    display: none; 
+}
+
+nav {
+    background-color: rgba(24, 58, 25, 0.308);
+    padding: 0.7vw 0px 0.7vw 0px;
+    height: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 36vw;
+    font-size: 1.7vw;
+    color: rgb(243, 243, 181);
+    text-shadow: 1px 1px 5px black;
+}
+
+#posts {
+    margin-top: 5vw;
+    margin-left: 2.7vw;
+    margin-right: 2.7vw;
+    background-image: linear-gradient(140deg, #0077b6, #023e8a, #051923);
+    background-clip: text;
+    color: transparent;
+    font-size: 1.4vw;
+}
+
+#input-box {
+    position: absolute;
+    width: 36vw;
+    height: 36vw;
+    margin-top: 20vh;
+    margin-left: 56vw;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: -0.8vw -0.8vw 15px rgba(255,255,255,0.2),
+                0.8vw 0.8vw 15px rgba(0,0,0,0.1),
+                inset -0.27vw -0.27vw 5px rgba(255,255,255,0.2),
+                inset 0.27vw 0.27vw 5px rgba(0,0,0,0.1);
+}
+
+#article {
+    display: flex;
+    flex-direction: column;
+    margin: 4vw;
+}
+
+.labels {
+    color: rgb(243, 243, 181);
+    font-size: 1.5vw;
+    font-weight: 900;
+
+}
+
+.txtbox {
+    outline: none;
+    font-size: 1vw;
+    background-color: rgba(212, 206, 197, 0.26);
+    padding: 0.5vw;
+    margin: 1vw;
+    border: none;
+    width: 90%;
+    box-shadow: -0.7vw 0.7vw 0.5vw rgba(0,0,0,0.2);
+}
+
+button {
+    position: absolute;
+    font-size: 1vw;
+    font-weight: 900;
+    padding: 0.6vw 2.2vw;
+    width: fit-content;
+    border-radius: 2vw;
+    margin-left: 17vw;
+    margin-top: 23vw;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    box-shadow: -0.8vw -0.8vw 15px rgba(255,255,255,0.2),
+                0.8vw 0.8vw 15px rgba(0,0,0,0.1),
+                inset -0.27vw -0.27vw 5px rgba(255,255,255,0.2),
+                inset 0.27vw 0.27vw 5px rgba(0,0,0,0.1);
+}
+
+button:active {
+    box-shadow: -0.9vw -0.9vw 15px rgba(255,255,255,0.3),
+                0.9vw 0.9vw 15px rgba(0,0,0,0.2),
+                inset -0.37vw -0.37vw 5px rgba(255,255,255,0.3),
+                inset 0.37vw 0.37vw 5px rgba(0,0,0,0.2);
+}
